@@ -1,0 +1,103 @@
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+@import "../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss";
+@import "../node_modules/bootstrap/scss/variables.scss";
+@import "variables";
+@import "who-we-are";
+@import "footer";
+
+// ---------- layout ----------- //
+// $transition-collapse: height 4s ease !default;
+
+body {
+  background-color: $black;
+  color: $white;
+}
+
+.brand-color {
+  color: $brand-color;
+}
+
+.container {
+  padding: 5rem 0;
+  @media only screen and (max-width: 576px) {
+    padding: 3rem 2rem;
+  }
+}
+
+.separator {
+  border-bottom: 3px solid $gray-300;
+  width: 100%;
+}
+
+// ---------- navigation ----------- //
+nav {
+  padding: .5rem 1rem;
+  box-shadow: 0 3px 20px $black;
+
+  .icons a {
+    color: $white;
+    font-size: 1.5rem;
+    margin-left: 1rem;
+    transition: color ease-in-out .3s;
+
+    &:hover {
+      color: $brand-color;
+    }
+  }
+
+  @media only screen and (min-width: 991px) {
+    .nav-link {
+      display: inline-block;
+    }
+
+    .nav-item {
+      margin-left: 3rem;
+    }
+  }
+}
+
+// ---------- banner----------- //
+.carousel-indicators [data-bs-target]  {
+  height: 1.5rem;
+  width: 1.5rem;
+  border-radius: 50%;
+  background-color: transparent;
+  opacity: 1;
+  border: 2px solid $brand-color;
+  transition: background-color ease-in-out .3s;
+
+  &.active {
+    border: none;
+    height: 1.8rem;
+    width: 1.8rem;
+    background-color: $brand-color;
+  }
+}
+
+#heroCarousel {
+  border-bottom: 3px solid $brand-color;
+
+  .carousel-item {
+    height: 40rem;
+
+    img {
+      position: absolute;
+      top: -20rem;
+      left: 0;
+      min-height: 40rem;
+    }
+  }
+}
+
+.expand-button {
+  padding: .5rem 1.5rem;
+  margin-top: 2rem;
+  background: transparent;
+  border: 1px solid $brand-color;
+  color: $brand-color;
+  border-radius: 2rem;
+
+  span {
+    margin-right: 1rem;
+  }
+}

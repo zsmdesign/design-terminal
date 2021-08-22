@@ -1,0 +1,39 @@
+@import "variables";
+
+footer {
+  background-color: $gray-900;
+
+  .container {
+    padding: 3rem 0;
+  }
+
+  span, li {
+    font-size: 80%;
+  }
+
+  ul {
+    list-style: none;
+
+    a {
+      color: $white;
+      text-decoration: none;
+      transition: color ease-in-out .3s;
+
+      &:hover {
+        color: $brand-color;
+      }
+    }
+  }
+
+  .icons a {
+    color: $white;
+    transition: color ease-in-out .3s;
+    font-size: 2rem;
+    margin-left: 1rem;
+
+    &:hover {
+      color: $brand-color;
+    }
+  }
+}
+

@@ -1,0 +1,87 @@
+#whoWeAreCollapse {
+  background-color: $white;
+  color: $gray-900;
+
+  .container {
+    padding: 0;
+  }
+
+  .accordion-body {
+    padding: 4rem 1.25rem;
+  }
+
+  .profile-pic {
+    background-color: $gray-300;
+    width: 9rem;
+    height: 9rem;
+    border-radius: 50%;
+    margin: 1.5rem 1rem 1rem 1rem;
+    display: inline-block;
+    background-size: contain;
+    transition: all ease-in-out .3s;
+
+    &:hover {
+      margin: 1rem 1rem 1.5rem 1rem;
+      box-shadow: 0px 5px 8px rgba(0,0,0,0.4);
+    }
+  }
+
+  .collapse-button {
+    color: $gray-600;
+    text-decoration: none;
+    border: 1px solid $gray-600;
+    display: block;
+    width: 5.5rem;
+    margin: auto;
+    border-radius: 3rem;
+    padding: 0;
+    cursor: pointer;
+    transition: all ease-in-out .3s;
+
+    &:hover {
+      color: $brand-color;
+      border-color: $brand-color;
+    }
+  }
+}
+
+#profilePicContainer {
+  margin: auto;
+}
+
+#timeLine {
+  position: relative;
+  overflow: hidden;
+
+  .column {
+    position: relative;
+    right: 1rem;
+    opacity: 0;
+    transition: all ease-in-out .3s;
+  }
+
+  svg {
+    color: $brand-color;
+    font-size: 1.7rem;
+    bottom: 4px;
+    position: relative;
+  }
+
+  .line {
+    height: 3px;
+    background-color: $gray-600;
+    opacity: 1;
+    position: absolute;
+    top: 3.5rem;
+    left: 1rem;
+    padding-right: 2rem;
+    width: 100%;
+  }
+
+  &.fadeIn {
+    .column {
+      opacity: 1;
+      right: 0;
+    }
+  }
+}

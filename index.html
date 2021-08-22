@@ -1,0 +1,231 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title>Design Terminal</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="Design Terminal">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/main.css">
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="#">TEAM</a>
+            <a class="nav-link active" href="#">WORK</a>
+            <a class="nav-link" href="#">CONTACT</a>
+          </li>
+        </ul>
+        <div class="icons d-flex">
+          <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a href="#" target="_blank"><i class="fab fa-facebook-square"></i></a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!--We developed more than br 1000 startups without borders.-->
+  <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./img/hero-1.png" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="./img/hero-2.png" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="./img/hero-1.png" class="d-block w-100" alt="...">
+      </div>
+    </div>
+  </div>
+
+  <div id="whoWeAre" class="container">
+    <div class="row">
+      <div class="col">
+        <p class="brand-color fs-3">team</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-4 col-sm-12">
+        <h2 class="brand-color fs-1">WHO WE ARE</h2>
+      </div>
+      <div class="col">
+        <p class="mb-0 fw-bold">That other text? Sadly, it’s no longer a 10. That other text? Sadly.</p>
+        <p>The best taco bowls are made in Trump Tower Grill. I love Hispanics! Lorem Ipsum is the single greatest threat. We are not – we are not keeping up with other websites. An ‘extremely credible source’ has called my office and told me that Barack Obama’s placeholder text is a fraud.</p>
+
+        <button id="expandWhoWeAre" class="expand-button fs-4" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+          <span>Find out more</span>
+          <i class="fa fa-chevron-down"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div id="whoWeAreCollapse">
+    <div class="container">
+
+      <div class="accordion accordion-flush" id="whoWeAreFlush">
+        <div class="accordion-item">
+          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#whoWeAreFlush">
+            <div class="accordion-body">
+
+              <div class="row">
+                <div class="col-lg-4 col-sm-12">
+                  <h2 class="brand-color fs-1">WHAT WE DO</h2>
+                </div>
+                <div class="col">
+                  <p>The best taco bowls are made in Trump Tower Grill. I love Hispanics! Lorem Ipsum is the single greatest threat. We are not – we are not keeping up with other websites. An ‘extremely credible source’ has called my office and told me that Barack Obama’s placeholder text is a fraud.</p>
+                </div>
+              </div>
+
+              <div class="row pt-5 pb-5">
+                <div class="col-sm-12">
+                  <h2 class="brand-color mb-5 fs-1">TEAM MEMBERS</h2>
+                </div>
+                <div id="profilePicContainer" class="col-lg-11 col-md-8 col-sm-12 text-center">
+                  <!--- dynamic content --->
+                </div>
+              </div>
+
+              <div class="row pt-5 pb-5">
+                <div class="col-lg-4 col-sm-12">
+                  <h2 class="brand-color fs-1">OUR STORY</h2>
+                </div>
+                <div class="col fw-bold">
+                  <p>The best taco bowls are made in Trump Tower Grill. I love Hispanics! Lorem Ipsum is the single greatest threat. We are not – we are not keeping up with other websites. An ‘extremely credible source’ has called my office and told me that Barack Obama’s placeholder text is a fraud.</p>
+                </div>
+              </div>
+
+              <div id="timeLine" class="row pt-5 pb-5">
+                <hr class="line">
+                <div class="col-lg-3 column" style="transition-delay: .6s">
+                  <i class="fa fa-circle"></i>
+                  <p class="fw-bold mb-0">1999</p>
+                  <p>The best taco bowls are made in Trump Tower Grill. I love Hispanics! Lorem Ipsum is the single greatest threat. We are not – we are not keeping up with other websites.</p>
+                </div>
+                <div class="col-lg-3 column" style="transition-delay: .8s">
+                  <i class="fa fa-circle"></i>
+                  <p class="fw-bold mb-0">1999</p>
+                  <p>The best taco bowls are made in Trump Tower Grill. I love Hispanics! Lorem Ipsum is the single greatest threat. We are not – we are not keeping up with other websites.</p>
+                </div>
+                <div class="col-lg-3 column" style="transition-delay: 1s">
+                  <i class="fa fa-circle"></i>
+                  <p class="fw-bold mb-0">1999</p>
+                  <p>The best taco bowls are made in Trump Tower Grill. I love Hispanics! Lorem Ipsum is the single greatest threat. We are not – we are not keeping up with other websites.</p>
+                </div>
+                <div class="col-lg-3 column" style="transition-delay: 1.2s">
+                  <i class="fa fa-circle"></i>
+                  <p class="fw-bold mb-0">1999</p>
+                  <p>The best taco bowls are made in Trump Tower Grill. I love Hispanics! Lorem Ipsum is the single greatest threat. We are not – we are not keeping up with other websites.</p>
+                </div>
+              </div>
+
+              <div class="row">
+                <a class="collapse-button text-center" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne"><span class="me-2">close</span><i class="fa fa-chevron-up"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="separator"></div>
+
+  <div id="programs" class="container">
+    <div class="row">
+      <div class="col">
+        <p class="brand-color fs-3">work</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-4 col-sm-12">
+        <h2 class="brand-color fs-1">PROGRAMS</h2>
+      </div>
+      <div class="col">
+        <h3 class="fw-bold text-decoration-underline">Talent Programs</h3>
+        <h3 class="fw-bold text-decoration-underline">Corporate Projects</h3>
+        <h3 class="fw-bold text-decoration-underline">EU Projects</h3>
+      </div>
+    </div>
+  </div>
+
+  <div class="separator"></div>
+
+  <div id="joinOurTeam" class="container">
+    <div class="row">
+      <div class="col">
+        <p class="brand-color fs-3">contact</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-4 col-sm-12">
+        <h2 class="brand-color fs-1">WANT TO JOIN OUR TEAM?</h2>
+      </div>
+      <div class="col">
+        <p class="mb-0 fw-bold">The best taco bowls are made in Trump Tower Grill. I love Hispanics! Lorem Ipsum is the single greatest threat. We are not – we are not keeping up with other websites. An ‘extremely credible source’ has called my office and told me that Barack Obama’s placeholder text is a fraud.</p>
+
+        <button id="expandOurTeam" class="expand-button fs-4" type="button">
+          <span>Find out more</span>
+          <i class="fa fa-chevron-down"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <div class="d-flex">
+        <ul>
+          <li class="mb-3"><a href="#">Kapcsolat</a></li>
+          <li class="mb-3"><a href="#">Seal nyilatkozat</a></li>
+          <li><a href="#">Adatkezelési útmutató</a></li>
+        </ul>
+        <div class="ms-auto icons">
+          <span class="me-5">2021© Design Terminal</span>
+          <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a href="#" target="_blank"><i class="fab fa-facebook-square"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/jquery/jquery.min.js"></script>
+  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+
+  <script src="js/main.js" type="module"></script>
+</body>
+
+</html>

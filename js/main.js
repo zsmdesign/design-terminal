@@ -1,3 +1,4 @@
+import $ from '../node_modules/jquery/dist/jquery.min';
 import '../node_modules/bootstrap/dist/js/bootstrap.min.js';
 import '../node_modules/@fortawesome/fontawesome-free/js/all.min.js'
 
@@ -19,7 +20,7 @@ $( "#expandWhoWeAre" ).on( "click", function( event) {
 
     return ((compareBottom <= viewBottom) && (compareTop >= viewTop));
   };
-})(jQuery);
+})($);
 
 
 $(window).on( "scroll", function( event) {

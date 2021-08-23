@@ -2,9 +2,11 @@ import $ from '../node_modules/jquery/dist/jquery.min';
 import '../node_modules/bootstrap/dist/js/bootstrap.min.js';
 import '../node_modules/@fortawesome/fontawesome-free/js/all.min.js'
 
-$( "#expandWhoWeAre" ).on( "click", function( event) {
-  $( "#whoWeAre" ).toggleClass("expand");
-  $( "#whoWeAreCollapse" ).toggleClass("expand");
+$( `[data-collapse-whoweare]` ).on( "click", function( event) {
+  setTimeout(function(){ $("#timeLine").removeClass("fadeIn"); }, 1000);
+});
+$( `[data-collapse-joinourteam]` ).on( "click", function( event) {
+  $('#joinOurTeam').toggleClass('expand');
 });
 
 (function($) {

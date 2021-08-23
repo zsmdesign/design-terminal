@@ -1,0 +1,49 @@
+@import "variables";
+
+#joinOurTeamCollapse {
+  .container {
+    padding: 0;
+  }
+
+  .accordion-body {
+    background: $black;
+    padding: 0 0 4rem 0;
+
+    @media only screen and (max-width: 991px) {
+      padding: 0 2rem 4rem;
+    }
+  }
+
+  .collapse-button {
+    color: $brand-color;
+    border-color: $brand-color;
+  }
+}
+
+#joinOurTeam, #joinOurTeamCollapse {
+  .link {
+    color: $brand-color;
+    text-decoration: none;
+    display: block;
+    width: fit-content;
+
+    &:hover {
+      color: darken($brand-color, 10%);
+    }
+  }
+}
+
+#joinOurTeam {
+  .link {
+    display: none;
+  }
+
+  &.expand {
+    .link {
+      display: block;
+    }
+    #expandOurTeam {
+      display: none;
+    }
+  }
+}

@@ -10,9 +10,16 @@
 // ---------- layout ----------- //
 $transition-collapse: height 1s ease !default;
 
+@font-face {
+  font-family: "Gilmer";
+  src: url("./fonts/gilmer-regular.woff") format("woff");
+}
+
+
 body {
   background-color: $black;
   color: $white;
+  font-family: Gilmer;
 }
 
 .brand-color {

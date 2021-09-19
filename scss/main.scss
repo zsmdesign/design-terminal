@@ -152,3 +152,11 @@ nav {
     }
   }
 }
+
+#programs {
+  .link {
+    &:hover {
+      color: $brand-color;
+    }
+  }
+}

@@ -44,6 +44,10 @@ nav {
   padding: 0 1rem !important;
   box-shadow: 0 3px 20px $black;
 
+  .navbar-collapse {
+    transition: all cubic-bezier(0.550, 0.055, 0.675, 0.190) .5s;
+  }
+
   .icons a {
     color: $white;
     font-size: 1.5rem;
@@ -70,6 +74,16 @@ nav {
 
     .nav-item {
       margin-left: 3rem;
+    }
+  }
+
+  @media only screen and (max-width: 991px) {
+    .nav-item {
+      padding-left: 1rem;
+    }
+
+    .icons {
+      padding-bottom: 1rem;
     }
   }
 }

@@ -5,6 +5,7 @@
 @import "common";
 @import "join-our-team";
 @import "who-we-are";
+@import "partners";
 @import "footer";
 
 // ---------- layout ----------- //
@@ -135,15 +136,5 @@ nav {
         background-size: 150%;
       }
     }
-  }
-}
-
-#partners {
-  img {
-    margin: 0 1rem;
-    width: 60%;
-  }
-  .fgs {
-    width: 40%;
   }
 }

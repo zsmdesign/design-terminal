@@ -1,0 +1,20 @@
+#partners {
+  .img-container {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 10rem;
+    height: 4rem;
+    
+    @include media-breakpoint-down(md) {
+      width: 7rem;
+      margin: 1rem auto;
+    }
+  }
+
+  .d-flex {
+    @include media-breakpoint-down(md) {
+      flex-direction: column !important;
+    }
+  }
+}

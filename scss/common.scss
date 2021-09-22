@@ -34,3 +34,33 @@
     color: $white;
   }
 }
+
+.subpage-title {
+  h1 {
+    display: inline-block;
+    border-right: 2px solid white;
+    padding-right: 1rem;
+  }
+
+  img {
+    display: inline-block;
+    width: 10rem;
+  }
+}
+
+.subpage {
+  h2 {
+    color: $brand-color;
+  }
+
+  a {
+    color: $brand-color;
+    &:hover {
+      color: darken($brand-color, 10%);
+    }
+  }
+
+  .collapse-button {
+    color: $gray-600;
+  }
+}

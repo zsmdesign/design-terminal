@@ -23,8 +23,14 @@
   border: 1px solid $brand-color;
   color: $brand-color;
   border-radius: 2rem;
+  transition: all ease-in-out .3s;
 
   span {
     margin-right: 1rem;
+  }
+
+  &:hover {
+    border-color: $white;
+    color: $white;
   }
 }

@@ -17,6 +17,11 @@
   .collapse-button {
     color: $brand-color;
     border-color: $brand-color;
+
+    &:hover {
+      color: $white;
+      border-color: $white;
+    }
   }
 }
 
@@ -28,7 +33,7 @@
     width: fit-content;
 
     &:hover {
-      color: darken($brand-color, 10%);
+      color: $white;
     }
   }
 }

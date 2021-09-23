@@ -60,6 +60,7 @@ $(function () {
 function populateProfilePictures(data) {
   for(let i in data) {
     let div = document.createElement("div");
+    let span = document.createElement("span");
     div.classList.add("profile-pic");
     div.style.backgroundImage = "url(" + data[i].src + ")";
     $( "#profilePicContainer" ).append( div );

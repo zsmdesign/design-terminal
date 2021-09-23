@@ -14,43 +14,47 @@
     }
   }
 
-  .collapse-button {
-    color: $brand-color;
-    border-color: $brand-color;
-
-    &:hover {
-      color: $white;
-      border-color: $white;
-    }
+  .col {
+    margin-top: -3rem;
   }
-}
 
-#joinOurTeam, #joinOurTeamCollapse {
   .link {
     color: $brand-color;
     text-decoration: none;
     display: block;
     width: fit-content;
+    margin-bottom: .3rem;
+    margin-left: 1.5rem;
+    opacity: 0;
+    transition: all ease-in-out .3s;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+
+    &:nth-child(1) { transition-delay: 0s; }
+    &:nth-child(2) { transition-delay: .1s; }
+    &:nth-child(3) { transition-delay: .2s; }
+    &:nth-child(4) { transition-delay: .3s; }
+    &:nth-child(5) { transition-delay: .4s; }
+    &:nth-child(6) { transition-delay: .5s; }
 
     &:hover {
       color: $white;
     }
   }
-}
 
-#joinOurTeam {
-  .link {
-    display: none;
-  }
-
-  &.expand {
-    padding-bottom: 2rem;
-    
-    .link {
-      display: block;
+  .accordion-collapse {
+    &.collapsing {
+      .col {
+        opacity: 0;
+      }
     }
-    #expandOurTeam {
-      display: none;
+    &.show {
+      .link {
+        margin-left: 0;
+        opacity: 1;
+      }
     }
   }
 }

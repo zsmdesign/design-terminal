@@ -27,7 +27,9 @@ $( `[data-collapse-joinourteam]` ).on( "click", function( event) {
 
 $(window).on( "scroll", function( event) {
     if ($("#timeLine").visible(true)) {
-      $("#timeLine").addClass("fadeIn");
+      setTimeout(function(){
+        $("#timeLine").addClass("fadeIn");
+      }, 500);
     }
 });
 
@@ -66,3 +68,7 @@ function populateProfilePictures(data) {
     $( "#profilePicContainer" ).append( div );
   }
 };
+
+function expandOurTeam() {
+  console.log(this);
+}

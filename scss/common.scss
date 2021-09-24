@@ -33,7 +33,8 @@
     transform: rotate(180deg);
   }
 
-  &.collapsed {
+  
+  &[aria-expanded="false"] {
     svg {
       transform: rotate(0deg);
     }

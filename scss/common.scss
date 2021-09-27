@@ -75,3 +75,47 @@
     color: $gray-600;
   }
 }
+
+#mainNavbar {
+  .language {
+    button {
+      background-color: transparent;
+      border: none;
+    }
+
+    .dropdown-menu {
+      box-shadow: rgb(0, 0, 0) 0px 3px 20px 0px;
+      min-width: 6rem;
+      left: 1rem;
+      top: 2.5rem;
+
+      a {
+        color: $white;
+        background: transparent;
+
+        &:hover {
+          color: $brand-color;
+        }
+      }
+    }
+
+    .dropdown-item {
+      &.active {
+        opacity: .7;
+        pointer-events: none;
+      }
+    }
+
+    @media only screen and (max-width: 991px) {
+      padding-bottom: 1rem;
+
+      button {
+        margin: 0 !important;
+      }
+
+      .dropdown-menu {
+        left: 0;
+      }
+    }
+  }
+}

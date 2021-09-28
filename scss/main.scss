@@ -15,6 +15,10 @@ $transition-collapse: height 1s ease !default;
   font-family: "Gilmer";
   src: url("./fonts/gilmer-regular.woff") format("woff");
 }
+@font-face {
+  font-family: "Gilmer-heavy";
+  src: url("./fonts/gilmer-heavy.woff") format("woff");
+}
 
 
 body {
@@ -42,7 +46,6 @@ body {
 // ---------- navigation ----------- //
 nav {
   padding: 0 1rem !important;
-  box-shadow: 0 3px 20px $black;
 
   .navbar-collapse {
     transition: all cubic-bezier(0.550, 0.055, 0.675, 0.190) .5s;
@@ -101,6 +104,7 @@ nav {
   opacity: 1;
   border: 2px solid $brand-color;
   transition: background-color ease-in-out .3s;
+  margin: 0 .7rem 1rem;
 
   &.active {
     border: none;
@@ -158,9 +162,17 @@ nav {
 
 #programs {
   .link {
+    transition: color ease-in-out .3s;
+    margin-right: 2rem;
+
     &:hover {
-      color: $brand-color;
+      color: $white;
     }
+  }
+
+  hr {
+    background-color: $white;
+    opacity: 1;
   }
 }
 
@@ -218,7 +230,7 @@ nav {
     }
   }
   .modal-content {
-    background-color: $gray-900;
+    background-color: #333333;
   }
   .modal-body {
     padding: 2rem;
@@ -255,7 +267,7 @@ nav {
 
     &:hover {
       background: $brand-color;
-      color: $gray-900;
+      color: #333333;
     }
   }
 }

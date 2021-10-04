@@ -26,13 +26,37 @@ footer {
   }
 
   .icons a {
-    color: $white;
-    transition: color ease-in-out .3s;
-    font-size: 2rem;
     margin-left: 1rem;
 
-    &:hover {
-      color: $brand-color;
+    .custom-icon {
+      width: 30px;
+      height: 30px;
+      background-size: 129px;
+
+      &.facebook {
+        background-position: 1px 0px;
+        &:hover {
+          background-position: 1px -33px;
+        }
+      }
+      &.instagram {
+        background-position: -33px 0px;
+        &:hover {
+          background-position: -33px -33px;
+        }
+      }
+      &.youtube {
+        background-position: -67px 0px;
+        &:hover {
+          background-position: -67px -33px;
+        }
+      }
+      &.linkedin {
+        background-position: -100px 0px;
+        &:hover {
+          background-position: -100px -33px;
+        }
+      }
     }
   }
 }

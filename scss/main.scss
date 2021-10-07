@@ -17,7 +17,7 @@ $transition-collapse: height 1s ease !default;
 }
 @font-face {
   font-family: "Gilmer-bold";
-  src: url("./fonts/gilmer-bold.woff") format("woff");
+  src: url("./fonts/gilmer-heavy.woff2") format("woff");
 }
 
 
@@ -118,7 +118,7 @@ nav {
 
   h1 {
     position: absolute;
-    top: 45%;
+    top: 60%;
     margin-left: 5rem;
     margin-right: 50%;
     z-index: 2;
@@ -146,6 +146,13 @@ nav {
   .carousel-item {
     height: 40rem;
 
+    img {
+      position: absolute;
+      top: 28%;
+      left: 1.5rem;
+      z-index: 2;
+    }
+
     div {
       background-size: cover;
       background-position: center;
@@ -156,6 +163,12 @@ nav {
 
     @media only screen and (max-width: 991px) {
       height: 30rem;
+
+      img {
+        left: -.5rem;
+        z-index: 2;
+        width: 18rem;
+      }
     }
   }
 }

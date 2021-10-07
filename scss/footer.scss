@@ -25,8 +25,30 @@ footer {
     }
   }
 
+  .icons {
+    text-align: right;
+
+    @media only screen and (max-width: 991px) {
+      text-align: left;
+      padding: 0 2rem;
+
+      span {
+        display: block;
+        margin-top: 2rem;
+      }
+    }
+  }
+
   .icons a {
+    position: relative;
+    top: .6rem;
     margin-left: 1rem;
+    
+    @media only screen and (max-width: 991px) {
+      &:first-of-type {
+        margin-left: 0;
+      }
+    }
 
     .custom-icon {
       width: 30px;

@@ -5,6 +5,8 @@
     background-position: center;
     width: 10rem;
     height: 4rem;
+    display: inline-block;
+    margin: 1.5rem 1rem;
     
     @include media-breakpoint-down(md) {
       width: 7rem;

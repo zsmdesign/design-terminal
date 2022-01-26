@@ -1,6 +1,14 @@
+<<<<<<< HEAD
 # Include your project-specific ignores in this file
 # Read about how to use .gitignore: https://help.github.com/articles/ignoring-files
 # Useful .gitignore templates: https://github.com/github/gitignore
 node_modules
 dist
+=======
+# Include your project-specific ignores in this file
+# Read about how to use .gitignore: https://help.github.com/articles/ignoring-files
+# Useful .gitignore templates: https://github.com/github/gitignore
+node_modules
+dist
+>>>>>>> a4f8cf5180f1a734c3aef1ae368082dc6e6b1c63
 .cache

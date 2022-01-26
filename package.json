@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
   "name": "design-terminal",
   "version": "0.0.1",
@@ -30,3 +31,37 @@
     "uglify-js": "^3.14.2"
   }
 }
+=======
+{
+  "name": "design-terminal",
+  "version": "0.0.1",
+  "description": "",
+  "keywords": "",
+  "license": "",
+  "author": "Zsámba Miklós",
+  "scripts": {
+    "build": "parcel build index.html",
+    "dev": "parcel index.html --open",
+    "start": "npm run build && npm run dev",
+    "build-css": "node-sass -w scss/ -o css/ --output-style compressed --recursive",
+    "minifyJquery": "uglifyjs node_modules/jquery/dist/jquery.min --compress --mangle --warn --output minjs/jquery.min.js",
+    "minifyBootstrap": "uglifyjs node_modules/bootstrap/dist/js/bootstrap.min.js --compress --mangle --warn --output minjs/bootstrap.min.js",
+    "minifyFontawesome": "uglifyjs node_modules/@fortawesome/fontawesome-free/js/all.min.js --compress --mangle --warn --output minjs/fontawesome.min.js",
+    "minifyJS": "uglifyjs js/main.js --compress --mangle --warn --output minjs/main.min.js",
+    "minifyAll": "npm run minifyJquery && npm run minifyBootstrap && npm run minifyFontawesome && npm run minifyJS"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.4",
+    "@glidejs/glide": "^3.5.2",
+    "@popperjs/core": "^2.9.3",
+    "@types/jquery": "^3.5.6",
+    "bootstrap": "^5.1.0",
+    "jquery": "^3.6.0",
+    "node-sass": "^7.0.1",
+    "uglify-js": "^3.14.2"
+  }
+}
+>>>>>>> a4f8cf5180f1a734c3aef1ae368082dc6e6b1c63

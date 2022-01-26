@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Please read: https://msdn.microsoft.com/en-us/library/ie/dn455106.aspx -->
 <browserconfig>
@@ -10,3 +11,17 @@
     </tile>
   </msapplication>
 </browserconfig>
+=======
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Please read: https://msdn.microsoft.com/en-us/library/ie/dn455106.aspx -->
+<browserconfig>
+  <msapplication>
+    <tile>
+      <square70x70logo src="tile.png"/>
+      <square150x150logo src="tile.png"/>
+      <wide310x150logo src="tile-wide.png"/>
+      <square310x310logo src="tile.png"/>
+    </tile>
+  </msapplication>
+</browserconfig>
+>>>>>>> a4f8cf5180f1a734c3aef1ae368082dc6e6b1c63

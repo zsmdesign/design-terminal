@@ -81,5 +81,40 @@ footer {
       }
     }
   }
-}
 
+  .accordion {
+    .accordion-item {
+      background-color: transparent;
+      cursor: pointer;
+
+      a {
+        font-size: 12.8px;
+      }
+    }
+
+    .pdfs {
+      a {
+        color: $brand-color;
+        display: block;
+
+        &:hover {
+          color: $white;
+        }
+      }
+    }
+  }
+
+  .copy-right {
+    display: inline-block;
+    float: right;
+    
+    span {
+      display: block;
+    }
+  }
+
+  .icons {
+    display: inline-block;
+    float: right;
+  }
+}

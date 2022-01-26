@@ -272,52 +272,18 @@
 
   <div id="joinOurTeam" data-bs-target="#mainNavbar" class="container">
     <div class="row">
-      <div class="col">
-        <p class="brand-color fs-3">contact</p>
-      </div>
-    </div>
-
-    <div class="row">
       <div class="col-lg-4 col-sm-12">
-        <h2 class="brand-color fs-1">WANT TO JOIN OUR TEAM?</h2>
+        <h2 class="brand-color text-uppercase fs-1">WANT TO partner with us?</h2>
       </div>
       <div class="col">
-        <p class="mb-4">The best taco bowls are made in Trump Tower Grill. I love Hispanics! Lorem Ipsum is the single greatest threat. We are not – we are not keeping up with other websites. An ‘extremely credible source’ has called my office and told me that Barack Obama’s placeholder text is a fraud.</p>
+        <p class="fw-bold">The best taco bowls are made in Trump Tower Grill. I love Hispanics! Lorem Ipsum is the single greatest threat. We are not – we are not keeping up with other websites. An ‘extremely credible source’ has called my office and told me that Barack Obama’s placeholder text is a fraud.</p>
+        <a class="link pb-5" href="#" target="_blank">Careers</a>
+        <p class="fw-bold">The best taco bowls are made in Trump Tower Grill. I love Hispanics! Lorem Ipsum is the single greatest threat.</p>
 
-        <button id="expandOurTeam" class="expand-button fs-4" type="button" data-collapse-joinourteam data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-          <span>Find out more</span>
-          <i class="fa fa-chevron-down"></i>
+        <button class="expand-button text-uppercase fs-4" type="button" data-bs-toggle="modal" data-bs-target="#sendMessageModal">
+          <span>send a message</span>
         </button>
-
       </div>
-    </div>
-  </div>
-
-  <div id="joinOurTeamCollapse">
-    <div class="container">
-
-      <div class="accordion accordion-flush" id="joinOurTeamFlush">
-        <div class="accordion-item">
-          <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#joinOurTeamFlush">
-            <div class="accordion-body">
-
-              <div class="row">
-                <div class="col-lg-4 col-sm-12">
-
-                </div>
-                <div class="col">
-                  <a class="link" href="#" target="_blank">Careers</a>
-                  <a class="link" href="#" target="_blank">For startups</a>
-                  <a class="link" href="#" target="_blank">For companies</a>
-                  <a class="link" href="#" target="_blank">For members</a>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </div>
-      </div>
-
     </div>
   </div>
 
@@ -345,22 +311,105 @@
       <div class="row">
         <div class="col-sm-12 col-md-6">
           <ul>
-            <li class="mb-3"><a href="#" target="_blank">Kapcsolat</a></li>
-            <li class="mb-3"><a href="#" target="_blank">Jogi nyilatkozat</a></li>
+            <li class="mb-3">
+
+              <div class="accordion accordion-flush" id="footerAccordion">
+                <div class="accordion-item">
+                  <span class="accordion-header" id="headingOne">
+                    <a data-bs-toggle="collapse" data-bs-target="#collapseOne">Átláthatóság</a>
+                  </span>
+                  <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#footerAccordion">
+                    <div class="accordion-body">
+                      <ul>
+                        <li class="mb-1" style="font-size: 12.8px;"><a href="#">Általános Felhasználási Feltételek (AFF)</a></li>
+                        <li style="font-size: 12.8px;">Éves Jelentések:</li>
+                        <div class="pdfs">
+                            <a href="#">2011</a>
+                            <a href="#">2011</a>
+                            <a href="#">2011</a>
+                            <a href="#">2011</a>
+                            <a href="#">2011</a>
+                            <a href="#">2011</a>
+                        </div>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
             <li class="mb-3"><a href="/cookie-policy.html" target="_blank">Cookie Szabályzat</a></li>
-            <li class="mb-3"><a href="#" target="_blank">Alumni Szabályzat</a></li>
-            <li><a href="#">Adatkezelési útmutató</a></li>
+            <li><a href="#">Adatvédelmi Tájékoztató</a></li>
           </ul>
         </div>
         <div class="col-sm-12 col-md-6">
           <div class="icons">
-            <span>2021© Design Terminal</span>
             <a href="#" target="_blank"><i class="custom-icon facebook"></i></a>
             <a href="https://www.linkedin.com/company/design-terminal" target="_blank"><i class="custom-icon linkedin"></i></a>
             <a href="#" target="_blank"><i class="custom-icon youtube"></i></a>
             <a href="#" target="_blank"><i class="custom-icon instagram"></i></a>
           </div>
+
+          <div class="copy-right mt-1">
+            <span>2021© Design Terminal</span>
+            <span>1122 Budapest, Székács u. 29.</span>
+          </div>          
         </div>        
+      </div>
+    </div>
+    
+    <!-- Send a Message Modal -->
+    <div class="modal fade" id="sendMessageModal" tabindex="-1" aria-labelledby="sendMessageLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title" id="sendMessageLabel">Lépj kapcsolatba velünk!</h3>
+            <a class="close-button" data-bs-dismiss="modal" aria-label="Close"><i class="fa fa-times"></i></a>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-1">
+                <label for="emailInput" class="form-label mb-0">Email cím *</label>
+                <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+                <input type="email" class="form-control" id="emailInput" aria-describedby="emailHelp">
+                <span class="validation-message brand-color">Kérem adjon meg email címet!</span>
+              </div>
+              <div class="mb-1">
+                <label for="firstNameInput" class="form-label mb-0">Keresztnév</label>
+                <input type="text" class="form-control" id="firstNameInput">
+              </div>
+              <div class="mb-1">
+                <label for="lastNameInput" class="form-label mb-0">Vezeték</label>
+                <input type="text" class="form-control" id="lastNameInput">
+              </div>
+              <div class="mb-1">
+                <label for="messageInput" class="form-label mb-0">Üzenet</label>
+                <input type="text" class="form-control" id="messageInput">
+              </div>
+              
+              <div class="mb-4 mt-4">
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="startupCheck">
+                  <label class="form-check-label" for="startupCheck">I'm a startup</label>
+                </div>
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="corporationCheck">
+                  <label class="form-check-label" for="corporationCheck">I'm a corpo</label>
+                </div>
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="mentorCheck">
+                  <label class="form-check-label" for="mentorCheck">I'm a mentor</label>
+                </div>
+              </div>
+
+              <div class="form-check mb-3">
+                <input type="checkbox" class="form-check-input" id="dataProtectionCheck">
+                <label id="dataProtectionCheckbox" class="form-check-label" for="dataProtectionCheck">Az adatvédelmi baszást elolvastam. *</label>
+              </div>
+            </form>
+
+            <button class="subscribe-button" data-send-form>Küldés</button>
+          </div>
+        </div>
       </div>
     </div>
 

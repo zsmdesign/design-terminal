@@ -14,9 +14,6 @@ glideMulti1.mount();
 $( `[data-collapse-whoweare]` ).on( "click", function( event) {
   setTimeout(function(){ $("#timeLine").removeClass("fadeIn"); }, 1000);
 });
-$( `[data-collapse-joinourteam]` ).on( "click", function( event) {
-  $('#joinOurTeam').toggleClass('expand');
-});
 
 (function($) {
   $.fn.visible = function(partial) {
@@ -42,12 +39,6 @@ $(window).on( "scroll", function( event) {
     }
 });
 
-// mocked data
-let profilesArray = [
-  { id: 1, src: "https://picsum.photos/id/4/300/300" },
-  { id: 2, src: "https://picsum.photos/id/5/300/300" }
-];
-
 const counterAnim = (qSelector, start = 0, end, duration = 1000) => {
   const target = document.querySelector(qSelector);
   let startTimestamp = null;
@@ -71,3 +62,21 @@ const counterAnim = (qSelector, start = 0, end, duration = 1000) => {
 function getDataCount(id) {
   return document.getElementById(id).getAttribute('data-target');
 }
+
+$( `[data-send-form]` ).on( "click", function(event) {
+  if(document.getElementById('emailInput').value.length > 0) {
+    $('.validation-message.email').removeClass('show');
+  } else {
+    $('.validation-message.email').addClass('show');
+    return
+  }
+
+  if(document.getElementById("dataProtectionCheck").checked) {
+    $('#dataProtectionCheckbox').removeClass('error');
+  } else {
+    $('#dataProtectionCheckbox').addClass('error');
+    return
+  }
+
+  // send msg
+});

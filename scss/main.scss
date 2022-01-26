@@ -1,6 +1,8 @@
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 @import "../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss";
 @import "../node_modules/bootstrap/scss/variables.scss";
+@import "../node_modules/@glidejs/glide/dist/css/glide.core.min.css";
+@import '../node_modules/@glidejs/glide/dist/css/glide.theme.min.css';
 @import "variables";
 @import "common";
 @import "join-our-team";
@@ -29,6 +31,10 @@ body {
 
 .brand-color {
   color: $brand-color;
+}
+
+.pt-6 {
+  padding-top: 8rem;
 }
 
 .container {
@@ -187,15 +193,45 @@ nav {
     transition: color ease-in-out .3s;
     margin-right: 2rem;
     font-family: "Gilmer-bold";
+    padding-bottom: 1rem;
 
     &:hover {
-      color: $white;
+      color: $brand-color;
     }
   }
 
-  hr {
-    background-color: $white;
-    opacity: 1;
+  .accordion-item {
+    background-color: transparent !important;
+    border: none;
+  }
+  .accordion-body {
+    padding: 0 0 1.5rem 0;
+
+    .image {
+      width: 30%;
+      background-position: left top;
+      background-size: contain;
+      background-repeat: no-repeat;
+      height: 10rem;
+      display: inline-block;
+    }
+
+    .text {
+      display: inline-block;
+      width: 69%;
+      vertical-align: top;
+    }
+
+    a {
+      text-decoration: none;
+      color: $brand-color;
+      display: block;
+      padding-top: .5rem;
+
+      &:hover {
+        color: $white;
+      }
+    }
   }
 }
 

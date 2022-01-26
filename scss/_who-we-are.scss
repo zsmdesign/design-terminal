@@ -1,10 +1,15 @@
-#whoWeAreCollapse {
+#counter {
+  padding-top: 5rem;
+
+  h2 {
+    margin-bottom: 0;
+    display: inline-block;
+  }
+}
+
+#whoWeAreContainer {
   background-color: $white;
   color: $gray-900;
-
-  .container {
-    padding: 0;
-  }
 
   .accordion-body {
     padding: 4rem 1.25rem;
@@ -12,11 +17,12 @@
 
   .profile-pic {
     position: relative;
+    text-align: center;
     background-color: $gray-300;
     width: 9rem;
     height: 9rem;
     border-radius: 50%;
-    margin: 1.5rem 1rem 2.5rem 1rem;
+    margin: 1.5rem 1rem 4.5rem 1rem;
     display: inline-block;
     background-size: contain;
     transition: all ease-in-out .3s;
@@ -25,15 +31,17 @@
       position: absolute;
       display: block;
       width: 10rem;
-      top: 9.5rem;
       transform: translateX(-50%);
       left: 50%;
+      
+      &.name {
+        top: 9.5rem;
+      }
+      &.title {
+        top: 11rem;
+      }
     }
   }
-}
-
-#profilePicContainer {
-  margin: auto;
 }
 
 #timeLine {

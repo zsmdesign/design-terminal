@@ -64,10 +64,19 @@ function getDataCount(id) {
 }
 
 $( `[data-send-form]` ).on( "click", function(event) {
-  if(document.getElementById('emailInput').value.length > 0) {
-    $('.validation-message.email').removeClass('show');
+  let emailInput = document.getElementById('emailInput').value;
+  
+  if(emailInput.length > 0) {
+    $('.validation-message.missing-email').removeClass('show');
   } else {
-    $('.validation-message.email').addClass('show');
+    $('.validation-message.missing-email').addClass('show');
+    return
+  }
+
+  if(emailInput.includes('@')) {
+    $('.validation-message.wrong-email').removeClass('show');
+  } else {
+    $('.validation-message.wrong-email').addClass('show');
     return
   }
 

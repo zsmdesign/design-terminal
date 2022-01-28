@@ -10,10 +10,11 @@
     "dev": "parcel index.html --open",
     "start": "npm run build && npm run dev",
     "build-css": "node-sass -w scss/ -o css/ --output-style compressed --recursive",
-    "minifyJquery": "uglifyjs node_modules/jquery/dist/jquery.min --compress --mangle --warn --output minjs/jquery.min.js",
+    "minifyJquery": "uglifyjs node_modules/jquery/dist/jquery.min.js --compress --mangle --warn --output minjs/jquery.min.js",
     "minifyBootstrap": "uglifyjs node_modules/bootstrap/dist/js/bootstrap.min.js --compress --mangle --warn --output minjs/bootstrap.min.js",
     "minifyFontawesome": "uglifyjs node_modules/@fortawesome/fontawesome-free/js/all.min.js --compress --mangle --warn --output minjs/fontawesome.min.js",
     "minifyJS": "uglifyjs js/main.js --compress --mangle --warn --output minjs/main.min.js",
+    "minifyGlide": "uglifyjs node_modules/@glidejs/glide/dist/glide.js --compress --mangle --warn --output minjs/glide.min.js",
     "minifyAll": "npm run minifyJquery && npm run minifyBootstrap && npm run minifyFontawesome && npm run minifyJS"
   },
   "devDependencies": {

@@ -1,7 +1,7 @@
 import $ from '../node_modules/jquery/dist/jquery.min';
 import '../node_modules/bootstrap/dist/js/bootstrap.min.js';
 import '../node_modules/@fortawesome/fontawesome-free/js/all.min.js';
-import Glide from '../node_modules/@glidejs/glide/dist/glide.js';
+import Glide from './minjs/glide.min.js';
 
 var glideMulti1 = new Glide('.multi', {
   type: 'carousel',

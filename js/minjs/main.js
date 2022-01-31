@@ -1,14 +1,31 @@
 import $ from '../minjs/jquery.min.js';
 import Glide from '../minjs/glide.min.js';
 
+function setGliderElement() {
+  if(window.innerWidth > 1200 ) {
+    return 6
+  }
+  if(window.innerWidth > 992 ) {
+    return 5
+  }
+  if(window.innerWidth < 500 ) {
+    return 2
+  }
+  if(window.innerWidth < 768 ) {
+    return 3
+  }
+  if(window.innerWidth < 992 ) {
+    return 4
+  }
+}
+
 var glideMulti1 = new Glide('.multi', {
   type: 'carousel',
   autoplay: 3500,
-  perView: 5
+  perView: setGliderElement()
 });
 
 glideMulti1.mount();
-
 $( `[data-collapse-whoweare]` ).on( "click", function( event) {
   setTimeout(function(){ $("#timeLine").removeClass("fadeIn"); }, 1000);
 });

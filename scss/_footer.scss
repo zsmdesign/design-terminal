@@ -107,6 +107,14 @@ footer {
   .copy-right {
     display: inline-block;
     float: right;
+
+    @media only screen and (max-width: 991px) {
+      padding: 0.5rem 2rem 0 0;
+    }
+    @media only screen and (max-width: 767px) {
+      padding: 0 0 0 2rem;
+      float: initial;
+    }
     
     span {
       display: block;
@@ -116,5 +124,10 @@ footer {
   .icons {
     display: inline-block;
     float: right;
+
+    @media only screen and (max-width: 460px) {
+      float: initial;
+      padding-bottom: 0.5rem;
+    }
   }
 }

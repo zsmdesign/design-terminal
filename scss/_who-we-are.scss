@@ -28,17 +28,16 @@
     transition: all ease-in-out .3s;
 
     span {
-      position: absolute;
       display: block;
-      width: 10rem;
-      transform: translateX(-50%);
+      width: 11rem;
+      position: relative;
       left: 50%;
+      transform: translateX(-50%);
       
       &.name {
-        top: 9.5rem;
-      }
-      &.title {
-        top: 11rem;
+        margin-top: 9.5rem;
+        margin-bottom: .2rem;
+        line-height: 1.2;
       }
     }
   }

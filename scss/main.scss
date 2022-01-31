@@ -1,8 +1,8 @@
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 @import "../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss";
 @import "../node_modules/bootstrap/scss/variables.scss";
-@import "../node_modules/@glidejs/glide/dist/css/glide.core.min.css";
-@import '../node_modules/@glidejs/glide/dist/css/glide.theme.min.css';
+@import "../css/glide.core.min.css";
+@import "../css/glide.theme.min.css";
 @import "variables";
 @import "common";
 @import "join-our-team";

@@ -47,6 +47,10 @@
   position: relative;
   overflow: hidden;
 
+  @include media-breakpoint-down(lg) {
+    display: block;
+  }
+
   .column {
     position: relative;
     right: 1rem;
@@ -92,6 +96,9 @@
       }
       &:nth-of-type(4) {
         transition-delay: .8s;
+      }
+      &:nth-of-type(5) {
+        transition-delay: 1s;
       }
     }
   }

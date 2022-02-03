@@ -80,6 +80,8 @@ function getDataCount(id) {
 
 $( `[data-send-form]` ).on( "click", function(event) {
   let emailInput = document.getElementById('emailInput').value;
+  let firstNameInput = document.getElementById('firstNameInput').value;
+  let lastNameInput = document.getElementById('lastNameInput').value;
   
   if(emailInput.length > 0) {
     $('.validation-message.missing-email').removeClass('show');
@@ -95,6 +97,20 @@ $( `[data-send-form]` ).on( "click", function(event) {
     return
   }
 
+  if(firstNameInput.length > 0) {
+    $('.validation-message.missing-first-name').removeClass('show');
+  } else {
+    $('.validation-message.missing-first-name').addClass('show');
+    return
+  }
+
+  if(lastNameInput.length > 0) {
+    $('.validation-message.missing-last-name').removeClass('show');
+  } else {
+    $('.validation-message.missing-last-name').addClass('show');
+    return
+  }
+
   if(document.getElementById("dataProtectionCheck").checked) {
     $('#dataProtectionCheckbox').removeClass('error');
   } else {
@@ -102,5 +118,5 @@ $( `[data-send-form]` ).on( "click", function(event) {
     return
   }
 
-  // send msg
+  console.log('send msg');
 });

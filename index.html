@@ -93,7 +93,7 @@
 
     <div id="counter" class="row text-center">
       <div class="col">
-        <h2 id="count1" data-target="120" class="brand-color fs-1">0</h2>
+        <h2 id="count1" data-target="12" class="brand-color fs-1">0</h2>
         <p>countries</p>
       </div>
       <div class="col">
@@ -111,16 +111,8 @@
 
   <div id="whoWeAreContainer">
     <div class="container">
-      <div class="row">
-        <div class="col-lg-4 col-sm-12">
-          <h2 class="brand-color text-uppercase fs-1">what we do</h2>
-        </div>
-        <div class="col">
-          <p>The best taco bowls are made in Trump Tower Grill. I love Hispanics! Lorem Ipsum is the single greatest threat. We are not – we are not keeping up with other websites. An ‘extremely credible source’ has called my office and told me that Barack Obama’s placeholder text is a fraud.</p>
-        </div>
-      </div>
 
-      <div class="row pt-5 pb-5">
+      <div class="row pb-5">
         <div class="col-lg-4 col-sm-12">
           <h2 class="brand-color text-uppercase fs-1">team members</h2>
         </div>
@@ -380,16 +372,18 @@
                 <span class="validation-message wrong-email brand-color">Kérem adjon meg helyes email címet!</span>
               </div>
               <div class="mb-1">
-                <label for="firstNameInput" class="form-label mb-0">Keresztnév</label>
+                <label for="firstNameInput" class="form-label mb-0">Keresztnév *</label>
                 <input type="text" class="form-control" id="firstNameInput">
+                <span class="validation-message missing-first-name brand-color">Kérem adjon meg keresztnevet!</span>
               </div>
               <div class="mb-1">
-                <label for="lastNameInput" class="form-label mb-0">Vezeték</label>
+                <label for="lastNameInput" class="form-label mb-0">Vezeték *</label>
                 <input type="text" class="form-control" id="lastNameInput">
+                <span class="validation-message missing-last-name brand-color">Kérem adjon meg vezetéknevet!</span>
               </div>
               <div class="mb-1">
                 <label for="messageInput" class="form-label mb-0">Üzenet</label>
-                <input type="text" class="form-control" id="messageInput">
+                <textarea type="text" class="form-control" id="messageInput" rows="7"></textarea>
               </div>
               
               <div class="mb-4 mt-4">
@@ -409,7 +403,7 @@
 
               <div class="form-check mb-3">
                 <input type="checkbox" class="form-check-input" id="dataProtectionCheck">
-                <label id="dataProtectionCheckbox" class="form-check-label" for="dataProtectionCheck">Az adatvédelmi tájékoztatót elolvastam. *</label>
+                <label id="dataProtectionCheckbox" class="form-check-label" for="dataProtectionCheck">Az <a href="#" target="_bank">adatvédelmi tájékoztatót</a> elolvastam. *</label>
               </div>
             </form>
 
@@ -438,12 +432,12 @@
                     <input type="email" value="" name="EMAIL" class="required email text-input" id="mce-EMAIL">
                   </div>
                   <div class="mc-field-group">
-                    <label for="mce-FNAME">First Name </label>
-                    <input type="text" value="" name="FNAME" class="text-input" id="mce-FNAME">
+                    <label for="mce-FNAME">First Name  <span class="asterisk">*</span></label>
+                    <input type="text" value="" name="FNAME" class="required text-input" id="mce-FNAME">
                   </div>
                   <div class="mc-field-group pb-3">
-                    <label for="mce-LNAME">Last Name </label>
-                    <input type="text" value="" name="LNAME" class="text-input" id="mce-LNAME">
+                    <label for="mce-LNAME">Last Name  <span class="asterisk">*</span></label>
+                    <input type="text" value="" name="LNAME" class="required text-input" id="mce-LNAME">
                   </div>
                   <div id="mergeRow-gdpr" class="mergeRow gdpr-mergeRow content__gdprBlock mc-field-group">
                       <div class="content__gdpr">

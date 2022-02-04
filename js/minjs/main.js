@@ -22,6 +22,8 @@ function setGliderElement() {
 var glideMulti1 = new Glide('.multi', {
   type: 'carousel',
   autoplay: 3500,
+  perTouch: false,
+  touchRatio: 2,
   perView: setGliderElement()
 });
 
@@ -45,12 +47,24 @@ $( `[data-collapse-whoweare]` ).on( "click", function( event) {
   };
 })($);
 
+var scrollFlag = true;
 
 $(window).on( "scroll", function( event) {
     if ($("#timeLine").visible(true)) {
       setTimeout(function(){
         $("#timeLine").addClass("fadeIn");
       }, 500);
+    }
+
+    if ($("#counter").visible(true)) {
+      if (scrollFlag) {
+        setTimeout(function() {
+          counterAnim("#count1", 0, getDataCount('count1'), 2000);
+          counterAnim("#count2", 0, getDataCount('count2'), 2000);
+          counterAnim("#count3", 0, getDataCount('count3'), 2000);
+        }, 500);
+        scrollFlag = false;
+      }
     }
 });
 
@@ -67,12 +81,7 @@ const counterAnim = (qSelector, start = 0, end, duration = 1000) => {
   };
   window.requestAnimationFrame(step);
  };
- 
- document.addEventListener("DOMContentLoaded", () => {
-  counterAnim("#count1", 0, getDataCount('count1'), 2000);
-  counterAnim("#count2", 0, getDataCount('count2'), 2000);
-  counterAnim("#count3", 0, getDataCount('count3'), 2000);
- });
+
 
 function getDataCount(id) {
   return document.getElementById(id).getAttribute('data-target');

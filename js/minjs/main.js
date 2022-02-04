@@ -27,10 +27,11 @@ var glideMulti1 = new Glide('.multi', {
   perView: setGliderElement()
 });
 
-glideMulti1.mount();
-$( `[data-collapse-whoweare]` ).on( "click", function( event) {
+$( `[data-collapse-whoweare]` ).on( "click", function(event) {
+  glideMulti1.mount();
   setTimeout(function(){ $("#timeLine").removeClass("fadeIn"); }, 1000);
 });
+
 
 (function($) {
   $.fn.visible = function(partial) {

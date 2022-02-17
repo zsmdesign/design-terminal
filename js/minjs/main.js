@@ -1,4 +1,4 @@
-import $ from '../minjs/jquery.min.js';
+//import $ from '../minjs/jquery.min.js';
 import Glide from '../minjs/glide.min.js';
 
 function setGliderElement() {
@@ -128,5 +128,23 @@ $( `[data-send-form]` ).on( "click", function(event) {
     return
   }
 
-  console.log('send msg');
+  if(false) {
+    $("#sendMessageModal").modal("hide");
+
+    $('#successMessageToast').removeClass('hide');
+    $('#successMessageToast').addClass('show');
+    setTimeout(() => {
+      $('#successMessageToast').removeClass('show');
+      $('#successMessageToast').addClass('hide');
+    }, 3000);
+  } else {
+    $("#sendMessageModal").modal("hide");
+
+    $('#errorMessageToast').removeClass('hide');
+    $('#errorMessageToast').addClass('show');
+    setTimeout(() => {
+      $('#errorMessageToast').removeClass('show');
+      $('#errorMessageToast').addClass('hide');
+    }, 3000);
+  }
 });

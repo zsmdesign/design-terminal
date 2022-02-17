@@ -194,6 +194,7 @@ nav {
     margin-right: 2rem;
     font-family: "Gilmer-bold";
     padding-bottom: 1rem;
+    cursor: pointer;
 
     &:hover {
       color: $brand-color;
@@ -218,6 +219,9 @@ nav {
       @media only screen and (max-width: 991px) {
         background-position: center center;
       }
+      @media only screen and (max-width: 767px) {
+        width: 100%;
+      }
     }
 
     .text {
@@ -226,7 +230,12 @@ nav {
       vertical-align: top;
 
       @media only screen and (max-width: 767px) {
-        padding-left: 1rem;
+        width: 100%;
+
+        span {
+          margin-bottom: 1rem;
+          display: block;
+        }
       }
     }
 
@@ -239,6 +248,16 @@ nav {
       &:hover {
         color: $white;
       }
+
+      @media only screen and (max-width: 767px) {
+        padding: 0;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 767px) {
+    h2 {
+      padding-bottom: 1rem;
     }
   }
 }
@@ -275,6 +294,15 @@ nav {
     transition: transform cubic-bezier(0.55, 0.055, 0.675, 0.19) 0.8s;
     transform: rotate(-220deg);
     transform-origin: -5rem -5rem;
+  }
+
+  @media only screen and (max-width: 767px) {
+    svg {
+      display: none;
+    }
+    a {
+      margin-bottom: -1rem;
+    }
   }
 }
 
@@ -364,5 +392,24 @@ nav {
     &.error {
       color: $brand-color;
     }
+  }
+}
+
+.toast {
+  display: block !important;
+  position: fixed;
+  bottom: -10rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: $brand-color;
+  color: initial;
+  transition: ease-in-out .3s bottom;
+
+  span {
+    font-size: 110%;
+  }
+
+  &.show {
+    bottom: 1rem;
   }
 }
